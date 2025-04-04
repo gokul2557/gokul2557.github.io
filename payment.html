@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation - Luxury Hotel & Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>LUXE</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="payment-confirmation">
+        <div class="confirmation-container">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>Payment Successful!</h1>
+            <p class="confirmation-message">Thank you for choosing Luxe Hotel. Your booking has been confirmed.</p>
+
+            <div class="booking-details">
+                <h2>Booking Details</h2>
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <i class="fas fa-hashtag"></i>
+                        <div>
+                            <h3>Booking ID</h3>
+                            <p>#LUXE-2024-1234</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <div>
+                            <h3>Check-in Date</h3>
+                            <p>March 15, 2024</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-times"></i>
+                        <div>
+                            <h3>Check-out Date</h3>
+                            <p>March 20, 2024</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-bed"></i>
+                        <div>
+                            <h3>Room Type</h3>
+                            <p>Executive Suite</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <h3>Guest Name</h3>
+                            <p>John Doe</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Contact Number</h3>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-summary">
+                <h2>Payment Summary</h2>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span>Room Rate </span>
+                        <span>₹${params.get('total-amount')}</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Taxes & Fees</span>
+                        <span>₹${params.get('taxes')}</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total Amount Paid</span>
+                        <span>₹${params.get('final-amount')}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-steps">
+                <h2>Next Steps</h2>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Confirmation Email</h3>
+                        <p>A confirmation email has been sent to your registered email address.</p>
+                    </div>
+                    <div class="step-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Check-in Time</h3>
+                        <p>Check-in is available from 3:00 PM onwards.</p>
+                    </div>
+                    <div class="step-item">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>Important Information</h3>
+                        <p>Please carry a valid ID proof and this booking confirmation for check-in.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="#" class="btn">Download Invoice</a>
+                <a href="index.html" class="btn">Return to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Luxury hotel offering world-class service and unforgettable experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="amenities.html">Amenities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxe Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get URL parameters
+            const params = new URLSearchParams(window.location.search);
+            
+            // Format date
+            function formatDate(dateString) {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+            }
+
+            // Format currency
+            function formatCurrency(amount) {
+                return new Intl.NumberFormat('en-IN', {
+                    style: 'currency',
+                    currency: 'INR'
+                }).format(amount);
+            }
+
+            // Update booking details
+            document.querySelector('.detail-item:nth-child(1) p').textContent = `#LUXE-${new Date().getFullYear()}-${Math.floor(Math.random() * 10000)}`;
+            document.querySelector('.detail-item:nth-child(2) p').textContent = formatDate(params.get('check-in'));
+            document.querySelector('.detail-item:nth-child(3) p').textContent = formatDate(params.get('check-out'));
+            document.querySelector('.detail-item:nth-child(4) p').textContent = params.get('room-type').replace(/\b\w/g, l => l.toUpperCase()) + ' Room';
+            document.querySelector('.detail-item:nth-child(5) p').textContent = params.get('name');
+            document.querySelector('.detail-item:nth-child(6) p').textContent = params.get('phone');
+
+            // Update payment summary
+            document.querySelector('.summary-item:nth-child(1) span:last-child').textContent = formatCurrency(params.get('total-amount'));
+            document.querySelector('.summary-item:nth-child(2) span:last-child').textContent = formatCurrency(params.get('taxes'));
+            document.querySelector('.summary-item.total span:last-child').textContent = formatCurrency(params.get('final-amount'));
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 

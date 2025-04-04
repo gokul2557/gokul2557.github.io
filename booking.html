@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - Luxury Hotel & Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>LUXE</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="booking-hero">
+        <div>
+            <h1>Book Your Stay</h1>
+            <p>Experience luxury and comfort at its finest</p>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-grid">
+                <div class="booking-form">
+                    <h2>Make a Reservation</h2>
+                    <form action="payment.html" method="GET" id="bookingForm">
+                        <div class="form-group">
+                            <label for="check-in">Check-in Date</label>
+                            <input type="date" id="check-in" name="check-in" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out">Check-out Date</label>
+                            <input type="date" id="check-out" name="check-out" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select number of guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="room-type">Room Type</label>
+                            <select id="room-type" name="room-type" required>
+                                <option value="">Select room type</option>
+                                <option value="standard">Standard Room</option>
+                                <option value="deluxe">Deluxe Room</option>
+                                <option value="executive">Executive Suite</option>
+                                <option value="luxury">Luxury Suite</option>
+                                <option value="family">Family Suite</option>
+                                <option value="presidential">Presidential Suite</option>
+                                <option value="honeymoon">Honeymoon Suite</option>
+                                <option value="villa">Beach Villa</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" name="special-requests"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Confirm Booking</button>
+                    </form>
+                </div>
+                <div class="booking-info">
+                    <h3>Room Rates</h3>
+                    <ul>
+                        <li>Standard Room: ₹1,499/night</li>
+                        <li>Deluxe Room: ₹1,999/night</li>
+                        <li>Executive Suite: ₹2,999/night</li>
+                        <li>Luxury Suite: ₹3,999/night</li>
+                        <li>Family Suite: ₹4,999/night</li>
+                        <li>Presidential Suite: ₹5,000/night</li>
+                        <li>Honeymoon Suite: ₹4,499/night</li>
+                        <li>Beach Villa: ₹4,999/night</li>
+                    </ul>
+                    <h3>Check-in/Check-out</h3>
+                    <ul>
+                        <li>Check-in: 2:00 PM</li>
+                        <li>Check-out: 12:00 PM</li>
+                    </ul>
+                    <h3>Hotel Policies</h3>
+                    <ul>
+                        <li>Free cancellation up to 24 hours before check-in</li>
+                        <li>No smoking in rooms</li>
+                        <li>Pets not allowed</li>
+                        <li>Valid ID required at check-in</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Luxury hotel offering world-class service and unforgettable experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxe Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

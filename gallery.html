@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Luxury Hotel & Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>LUXE</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="booking.html" class="btn">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+<br>
+    <section class="gallery-hero">
+        <div>
+            <h1>Our Gallery</h1>
+            <p>Explore the beauty and luxury of our hotel through our curated collection of images</p>
+        </div>
+    </section>
+<br>
+    <section class="gallery-section">
+        <div class="gallery-filters">
+            <button class="btn" data-filter="all">All</button>
+            <button class="btn" data-filter="rooms">Rooms & Suites</button>
+            <button class="btn" data-filter="dining">Dining</button>
+            <button class="btn" data-filter="spa">Spa & Wellness</button>
+            <button class="btn" data-filter="events">Events</button>
+            <button class="btn" data-filter="amenities">Amenities</button>
+        </div>
+<br>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="rooms">
+                <img src="images/1.jpeg" alt="Luxury Suite">
+                <div class="gallery-item-overlay">
+                    <h3>Luxury Suite</h3>
+                    <p>Experience ultimate comfort in our premium suites</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="rooms">
+                <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843" alt="Presidential Suite">
+                <div class="gallery-item-overlay">
+                    <h3>Presidential Suite</h3>
+                    <p>The epitome of luxury living</p>
+                </div>
+            </div>
+
+            <!-- Dining -->
+            <div class="gallery-item" data-category="dining">
+                <img src="https://images.unsplash.com/photo-1592861956120-e524fc739696" alt="Fine Dining">
+                <div class="gallery-item-overlay">
+                    <h3>Gourmet Restaurant</h3>
+                    <p>Exquisite culinary experiences</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="dining">
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b" alt="Bar">
+                <div class="gallery-item-overlay">
+                    <h3>Luxury Bar</h3>
+                    <p>Craft cocktails and fine spirits</p>
+                </div>
+            </div>
+
+            <!-- Spa -->
+            <div class="gallery-item" data-category="spa">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" alt="Spa">
+                <div class="gallery-item-overlay">
+                    <h3>Wellness Spa</h3>
+                    <p>Rejuvenate your body and mind</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="spa">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef" alt="Massage Room">
+                <div class="gallery-item-overlay">
+                    <h3>Massage Suite</h3>
+                    <p>Professional therapeutic treatments</p>
+                </div>
+            </div>
+
+            <!-- Events -->
+            <div class="gallery-item" data-category="events">
+                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3" alt="Wedding">
+                <div class="gallery-item-overlay">
+                    <h3>Wedding Venue</h3>
+                    <p>Create magical moments</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="events">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865" alt="Conference Room">
+                <div class="gallery-item-overlay">
+                    <h3>Conference Center</h3>
+                    <p>State-of-the-art meeting facilities</p>
+                </div>
+            </div>
+
+            <!-- Amenities -->
+            <div class="gallery-item" data-category="amenities">
+                <img src="https://images.unsplash.com/photo-1562790351-d273a961e0e9" alt="Pool">
+                <div class="gallery-item-overlay">
+                    <h3>Infinity Pool</h3>
+                    <p>Swim with a breathtaking view</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="amenities">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="Gym">
+                <div class="gallery-item-overlay">
+                    <h3>Fitness Center</h3>
+                    <p>Stay fit during your stay</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Luxury hotel offering world-class service and unforgettable experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxe Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery Filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox functionality
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const lightboxPrev = document.querySelector('.lightbox-prev');
+        const lightboxNext = document.querySelector('.lightbox-next');
+        let currentImageIndex = 0;
+        const images = Array.from(document.querySelectorAll('.gallery-item img'));
+
+        // Open lightbox
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentImageIndex = index;
+                const imgSrc = item.querySelector('img').src;
+                lightboxImg.src = imgSrc;
+                lightbox.classList.add('active');
+            });
+        });
+
+        // Close lightbox
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        // Navigate through images
+        lightboxPrev.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            lightboxImg.src = images[currentImageIndex].src;
+        });
+
+        lightboxNext.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            lightboxImg.src = images[currentImageIndex].src;
+        });
+
+        // Close lightbox with escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html> 
